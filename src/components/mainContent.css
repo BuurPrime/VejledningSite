@@ -1,0 +1,76 @@
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  margin: 0;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  grid-column: 1;
+}
+
+.VejledningTekstIndhold {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80px 300px 20px;
+  grid-gap: 10px;
+}
+
+.VideoContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2 / 3;
+  grid-column: 2;
+}
+
+.ButtonArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TextAndButtons {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* --- BUTTONS AND TEXT --- */
+
+#PreviousBut {
+  background-color: #99C9F5;
+  color: #fff; 
+  font-size: 16px;
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#PreviousBut:hover {
+  background-color: #0067C6;
+}
+
+#NextBut{
+background-color: #2292F9; 
+  color: #fff; 
+  font-size: 16px; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+#NextBut:hover {
+    background-color: #0067C6; 
+  }
+
+#CurrentPage {
+  padding-right: 30px;
+  padding-left: 30px;
+}
